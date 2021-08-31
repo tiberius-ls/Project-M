@@ -36,10 +36,30 @@ body {
     height: -10vh;
 }
 
+#tasks-list {
+    list-style: none;
+    padding-left: 0;
+    li {
+        cursor: grab;
+    }
+}
+
+.status {
+    .grip{
+        font-size: 1.1rem;
+        cursor: grab;
+        &:active {
+            cursor: grabbing;
+        }
+    }
+}
+
 .btn-success {
     margin-bottom: -15px;
     margin-top: 5px;
 }
+
+
 
 .card {
     color: #ddd;
